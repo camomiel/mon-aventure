@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mon Aventure !</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="home">
+  <h1>🎒 Bienvenue jeune explorateur !</h1>
+  <p>Entre ton <strong>code secret</strong> pour commencer ton aventure :</p>
+  <input type="password" id="code" placeholder="Code secret">
+  <button onclick="checkCode()">Commencer</button>
+  <script>
+    function checkCode() {
+      const code = document.getElementById('code').value;
+      if (code === "1234") {
+        window.location.href = "itineraire.html";
+      } else {
+        alert("Oops ! Code incorrect. Essaie encore.");
+      }
+    }
+  </script>
+</body>
+</html>
